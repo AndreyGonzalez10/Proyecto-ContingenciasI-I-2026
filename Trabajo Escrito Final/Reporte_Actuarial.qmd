@@ -1,0 +1,282 @@
+---
+title: ""
+format:
+  pdf:
+    pdf-engine: xelatex
+    documentclass: book
+    classoption: [letterpaper, 12pt, oneside]
+    toc: true
+    toc-title: "Contenido"
+    number-sections: false
+    geometry:
+      - left=2.54cm
+      - right=2.54cm
+      - top=2.54cm
+      - bottom=2.54cm
+    fontsize: 10pt
+    linestretch: 1
+    indent: true
+    header-includes: |
+      \usepackage{fontspec}
+      \usepackage[spanish]{babel}
+      \usepackage{textcomp}
+      \usepackage{indentfirst}
+      \usepackage{float}
+      \usepackage{tikz}
+      \usetikzlibrary{positioning,babel,calc}
+      \usepackage{tabularx}
+      \usepackage{geometry}
+      \geometry{margin=2.5cm}
+      \setlength{\parindent}{2em}
+      \setlength{\parskip}{0pt}
+      \usepackage{amsmath}
+      \usepackage{amsthm}
+      \usepackage{amsfonts}
+      \usepackage{mathtools}
+      \usepackage{setspace}
+      \usepackage{ltablex}
+      \keepXColumns
+      \usepackage{booktabs}
+      \usepackage{array}
+      \usepackage{enumitem}
+      \usepackage[dvipsnames]{xcolor}
+      \usepackage{pgfplots}
+      \pgfplotsset{compat=1.18}
+      \usepackage{graphicx}
+      \usepackage{longtable}
+      \usepackage{fancyhdr}
+      \pagestyle{plain}
+      \fancyhf{}
+      \renewcommand{\headrulewidth}{0pt}
+      \renewcommand{\chaptername}{Capítulo}
+      \usepackage{titlesec}
+      \titleformat{\chapter}[block]{\large\bfseries}{}{0pt}{}
+      \titlespacing*{\chapter}{0pt}{1.5ex}{1ex}
+      \titleformat{\section}{\normalsize\bfseries}{\thesection}{1em}{}
+      \titlespacing*{\section}{0pt}{1.2ex}{0.6ex}
+      \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+      \titlespacing*{\subsection}{0pt}{1ex}{0.4ex}
+      \newtheorem{definition}{Definición}[section]
+      \newtheorem{theorem}{Teorema}[section]
+      \renewcommand{\proofname}{Demostración}
+      % PORTADA
+      \AtBeginDocument{
+        \begin{titlepage}
+          \begin{center}
+            \vspace*{-2.5cm}
+            \includegraphics[width=0.7\textwidth]{figuras/UCR.png}
+            \\[0.5cm]
+            \large Escuela de Matemáticas \\[0.6cm]
+            \large Contingencias de Vida I (CA0306) \\[0.8cm]
+            \normalsize Informe Actuarial --- Proyecto Final \\[0.6cm]
+            \normalsize Prof: Msc. Eny Vargas Ulate \\[1.2cm]
+            \normalsize \textbf{Estudiantes:} \\[0.6cm]
+            \normalsize Anthonny Flores Rojas (C32975) \\[0.4cm]
+            \normalsize Andrey González Bastos (C33329) \\[0.4cm]
+            \normalsize Randal Picado Bermúdez (C36024) \\[0.4cm]
+            \normalsize Ashly (C) \\[0.4cm]
+            \normalsize Deb (C) \\[1.2cm]
+            \normalsize Fecha: 25/06/2026 \\[1cm]
+          \end{center}
+        \end{titlepage}
+      }
+---
+
+\setcounter{page}{1}
+
+\chapter*{1. Información General}
+\addcontentsline{toc}{chapter}{1. Información General}
+\markboth{Información General}{Información General}
+
+\section*{1.1 Definiciones}
+\addcontentsline{toc}{section}{1.1 Definiciones}
+
+\section*{1.2 Objetivos}
+\addcontentsline{toc}{section}{1.2 Objetivos}
+
+\subsection*{1.2.1 Objetivo General}
+\addcontentsline{toc}{subsection}{1.2.1 Objetivo General}
+
+\subsection*{1.2.2 Objetivos Específicos}
+\addcontentsline{toc}{subsection}{1.2.2 Objetivos Específicos}
+
+
+\chapter*{2. Análisis Estadístico de la Población}
+\addcontentsline{toc}{chapter}{2. Análisis Estadístico de la Población}
+\markboth{Análisis Estadístico de la Población}{Análisis Estadístico de la Población}
+
+\section*{2.1 Población de Empleados Activos}
+\addcontentsline{toc}{section}{2.1 Población de Empleados Activos}
+
+\subsection*{2.1.1 Estructura por Edad y Sexo}
+\addcontentsline{toc}{subsection}{2.1.1 Estructura por Edad y Sexo}
+
+\subsection*{2.1.2 Esperanza de Vida}
+\addcontentsline{toc}{subsection}{2.1.2 Esperanza de Vida}
+
+\section*{2.2 Población Pensionada}
+\addcontentsline{toc}{section}{2.2 Población Pensionada}
+
+\subsection*{2.2.1 Estructura por Edad y Sexo}
+\addcontentsline{toc}{subsection}{2.2.1 Estructura por Edad y Sexo}
+
+\subsection*{2.2.2 Esperanza de Vida}
+\addcontentsline{toc}{subsection}{2.2.2 Esperanza de Vida}
+
+\section*{2.3 Esperanza de Vida Promedio Total}
+\addcontentsline{toc}{section}{2.3 Esperanza de Vida Promedio Total}
+
+
+\chapter*{3. Metodología}
+\addcontentsline{toc}{chapter}{3. Metodología}
+\markboth{Metodología}{Metodología}
+
+\section*{3.1 Hipótesis y Supuestos}
+\addcontentsline{toc}{section}{3.1 Hipótesis y Supuestos}
+
+\section*{3.2 Proyecciones Demográficas}
+\addcontentsline{toc}{section}{3.2 Proyecciones Demográficas}
+
+\section*{3.3 Proyecciones Financieras}
+\addcontentsline{toc}{section}{3.3 Proyecciones Financieras}
+
+\subsection*{3.3.1 Pensión Mensual Vitalicia}
+\addcontentsline{toc}{subsection}{3.3.1 Pensión Mensual Vitalicia}
+
+\subsection*{3.3.2 Suma Única de Reconocimiento (Lump Sum)}
+\addcontentsline{toc}{subsection}{3.3.2 Suma Única de Reconocimiento (Lump Sum)}
+
+\subsection*{3.3.3 Seguro de Vida}
+\addcontentsline{toc}{subsection}{3.3.3 Seguro de Vida}
+
+\subsection*{3.3.4 Valor Presente de los Beneficios}
+\addcontentsline{toc}{subsection}{3.3.4 Valor Presente de los Beneficios}
+
+\section*{3.4 Esperanza de Vida}
+\addcontentsline{toc}{section}{3.4 Esperanza de Vida}
+
+\section*{3.5 Cálculo de Primas}
+\addcontentsline{toc}{section}{3.5 Cálculo de Primas}
+
+\subsection*{3.5.1 Prima Media Nivelada}
+\addcontentsline{toc}{subsection}{3.5.1 Prima Media Nivelada}
+
+\subsection*{3.5.2 Prima Anual por Edad y Sexo}
+\addcontentsline{toc}{subsection}{3.5.2 Prima Anual por Edad y Sexo}
+
+
+\chapter*{4. Resultados}
+\addcontentsline{toc}{chapter}{4. Resultados}
+\markboth{Resultados}{Resultados}
+
+\section*{4.1 Proyección Demográfica}
+\addcontentsline{toc}{section}{4.1 Proyección Demográfica}
+
+\subsection*{4.1.1 Empleados Activos}
+\addcontentsline{toc}{subsection}{4.1.1 Empleados Activos}
+
+\subsection*{4.1.2 Pensionados}
+\addcontentsline{toc}{subsection}{4.1.2 Pensionados}
+
+\subsection*{4.1.3 Muertes de Empleados Activos}
+\addcontentsline{toc}{subsection}{4.1.3 Muertes de Empleados Activos}
+
+\subsection*{4.1.4 Muertes de Pensionados}
+\addcontentsline{toc}{subsection}{4.1.4 Muertes de Pensionados}
+
+\section*{4.2 Proyecciones Financieras}
+\addcontentsline{toc}{section}{4.2 Proyecciones Financieras}
+
+\subsection*{4.2.1 Beneficio de Muerte de Empleados Activos}
+\addcontentsline{toc}{subsection}{4.2.1 Beneficio de Muerte de Empleados Activos}
+
+\subsection*{4.2.2 Beneficio de Muerte de Pensionados}
+\addcontentsline{toc}{subsection}{4.2.2 Beneficio de Muerte de Pensionados}
+
+\subsection*{4.2.3 Pago de Anualidades}
+\addcontentsline{toc}{subsection}{4.2.3 Pago de Anualidades}
+
+\subsection*{4.2.4 Suma Única por Retiro}
+\addcontentsline{toc}{subsection}{4.2.4 Suma Única por Retiro}
+
+\subsection*{4.2.5 Costo Actuarial de cada Beneficio}
+\addcontentsline{toc}{subsection}{4.2.5 Costo Actuarial de cada Beneficio}
+
+\subsection*{4.2.6 Costo Actuarial Total}
+\addcontentsline{toc}{subsection}{4.2.6 Costo Actuarial Total}
+
+\section*{4.3 Primas}
+\addcontentsline{toc}{section}{4.3 Primas}
+
+\subsection*{4.3.1 Prima Anual por Edad y Sexo}
+\addcontentsline{toc}{subsection}{4.3.1 Prima Anual por Edad y Sexo}
+
+\subsection*{4.3.2 Prima Media Nivelada}
+\addcontentsline{toc}{subsection}{4.3.2 Prima Media Nivelada}
+
+
+\chapter*{5. Análisis de Sensibilidad}
+\addcontentsline{toc}{chapter}{5. Análisis de Sensibilidad}
+\markboth{Análisis de Sensibilidad}{Análisis de Sensibilidad}
+
+\section*{5.1 Efecto sobre el Beneficio de Muerte}
+\addcontentsline{toc}{section}{5.1 Efecto sobre el Beneficio de Muerte}
+
+\section*{5.2 Efecto sobre las Pensiones}
+\addcontentsline{toc}{section}{5.2 Efecto sobre las Pensiones}
+
+\section*{5.3 Efecto sobre el Lump Sum}
+\addcontentsline{toc}{section}{5.3 Efecto sobre el Lump Sum}
+
+\section*{5.4 Efecto sobre el Costo Total del Plan}
+\addcontentsline{toc}{section}{5.4 Efecto sobre el Costo Total del Plan}
+
+\section*{5.5 Efecto sobre la Prima Media Nivelada}
+\addcontentsline{toc}{section}{5.5 Efecto sobre la Prima Media Nivelada}
+
+\section*{5.6 Análisis de Comportamientos}
+\addcontentsline{toc}{section}{5.6 Análisis de Comportamientos}
+
+\subsection*{5.6.1 Escenario Optimista}
+\addcontentsline{toc}{subsection}{5.6.1 Escenario Optimista}
+
+\subsection*{5.6.2 Escenario Pesimista}
+\addcontentsline{toc}{subsection}{5.6.2 Escenario Pesimista}
+
+
+\chapter*{6. Medidas para Reducir el Costo en un 10\%}
+\addcontentsline{toc}{chapter}{6. Medidas para Reducir el Costo en un 10\%}
+\markboth{Medidas para Reducir el Costo}{Medidas para Reducir el Costo}
+
+\section*{6.1 Contexto y Necesidad}
+\addcontentsline{toc}{section}{6.1 Contexto y Necesidad}
+
+\section*{6.2 Medidas Propuestas y su Fundamento}
+\addcontentsline{toc}{section}{6.2 Medidas Propuestas y su Fundamento}
+
+\section*{6.3 Resultados tras la Aplicación de las Medidas}
+\addcontentsline{toc}{section}{6.3 Resultados tras la Aplicación de las Medidas}
+
+
+\chapter*{7. Análisis Comparativo}
+\addcontentsline{toc}{chapter}{7. Análisis Comparativo}
+\markboth{Análisis Comparativo}{Análisis Comparativo}
+
+\section*{7.1 Modelo Base vs.\ Análisis de Sensibilidad}
+\addcontentsline{toc}{section}{7.1 Modelo Base vs. Análisis de Sensibilidad}
+
+\section*{7.2 Modelo Base vs.\ Medidas Propuestas}
+\addcontentsline{toc}{section}{7.2 Modelo Base vs. Medidas Propuestas}
+
+\section*{7.3 Resumen Comparativo}
+\addcontentsline{toc}{section}{7.3 Resumen Comparativo}
+
+
+\chapter*{8. Conclusiones}
+\addcontentsline{toc}{chapter}{8. Conclusiones}
+\markboth{Conclusiones}{Conclusiones}
+
+
+\chapter*{9. Recomendaciones}
+\addcontentsline{toc}{chapter}{9. Recomendaciones}
+\markboth{Recomendaciones}{Recomendaciones}
